@@ -1,0 +1,25 @@
+{
+  "name": "mocha-chai-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require fixtures.cjs",
+    "test:headless:true": "cross-env HEADLESS=true mocha --require fixtures.cjs",
+    "test:headless:false": "cross-env HEADLESS=false mocha --require fixtures.cjs"
+  },
+  "keywords": [],
+  "author": "Prashant",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "mocha": "^10.1.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0",
+    "puppeteer": "^19.3.0",
+    "puppeteer-core": "^19.3.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
+}
